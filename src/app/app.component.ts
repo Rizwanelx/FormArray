@@ -8,7 +8,7 @@ import { FormBuilder, FormGroup, FormArray ,} from '@angular/forms';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-
+title: 'Feature Module';
 
 orderForm: FormGroup;
 items: FormArray;
@@ -35,6 +35,5 @@ addItem(): void {
 }
 onSubmit(): void {
   console.log(this.orderForm.value);
-
 }
 }

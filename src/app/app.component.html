@@ -1,3 +1,17 @@
+
+
+<h1>
+  {{title}}
+</h1>
+
+<button routerLink="/customers">Customers</button>
+<button routerLink="/orders">Orders</button>
+<button routerLink="">Home</button>
+<br><br><br><br><br>
+<router-outlet></router-outlet>
+
+
+
 <form [formGroup]="orderForm"  (ngSubmit)="onSubmit()">
     <input formControlName="customerName" placeholder="Customer Name"><br><br>
     <input formControlName="email" placeholder="Customer Email"><br><br>
@@ -14,4 +28,3 @@
 <button type="submit">Save</button>
 
 </form>
-<router-outlet></router-outlet>
